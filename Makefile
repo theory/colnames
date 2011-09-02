@@ -5,6 +5,9 @@ EXTVERSION   = $(shell grep default_version $(EXTENSION).control | \
 DATA         = $(filter-out $(wildcard sql/*--*.sql),$(wildcard sql/*.sql))
 MODULES      = $(patsubst %.c,%,$(wildcard src/*.c))
 DOCS         = $(wildcard doc/*.mmd)
+TESTS        = $(wildcard test/sql/*.sql)
+REGRESS      = $(patsubst test/sql/%.sql,%,$(TESTS))
+REGRESS_OPTS = --inputdir=test
 PG_CONFIG    = pg_config
 PG91         = $(shell $(PG_CONFIG) --version | grep -qE " 8\.| 9\.0" && echo no || echo yes)
 

@@ -1,0 +1,26 @@
+\set ECHO 0
+  colnames  
+------------
+ {f1,f2,f3}
+(1 row)
+
+                               colnames                                
+-----------------------------------------------------------------------
+ {collname,collnamespace,collowner,collencoding,collcollate,collctype}
+(1 row)
+
+                               colnames                                
+-----------------------------------------------------------------------
+ {collname,collnamespace,collowner,collencoding,collcollate,collctype}
+(1 row)
+
+ colnames  
+-----------
+ {id,name}
+(1 row)
+
+       colnames       
+----------------------
+ {"The Id","My Name"}
+(1 row)
+
