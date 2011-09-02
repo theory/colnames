@@ -4,14 +4,14 @@
  {f1,f2,f3}
 (1 row)
 
-                        colnames                         
----------------------------------------------------------
- {castsource,casttarget,castfunc,castcontext,castmethod}
+                colnames                
+----------------------------------------
+ {objoid,classoid,objsubid,description}
 (1 row)
 
-                        colnames                         
----------------------------------------------------------
- {castsource,casttarget,castfunc,castcontext,castmethod}
+                colnames                
+----------------------------------------
+ {objoid,classoid,objsubid,description}
 (1 row)
 
  colnames  
