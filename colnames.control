@@ -1,6 +1,6 @@
 # colnames extension
 comment = 'Lists the column names in a PostgreSQL RECORD value'
-default_version = '1.0.0'
+default_version = '1.1.0'
 module_pathname = '$libdir/colnames'
 relocatable = true
 
