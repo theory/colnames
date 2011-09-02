@@ -1,8 +1,3 @@
--- $Id$
-
--- Adjust this setting to control where the objects get created. 
-SET search_path = public;
-
 -- note, this function is not strict; it's legal to pass in a null record of a
 -- named composite type.
 
@@ -12,5 +7,3 @@ SET search_path = public;
 
 CREATE FUNCTION colnames(record) RETURNS name[] LANGUAGE 'C' STABLE
 AS '$libdir/colnames','record_colnames';
-
--- end 
