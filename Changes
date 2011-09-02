@@ -1,0 +1,7 @@
+Revision history for PostgreSQL extension colnames.
+
+1.0.0  
+      - Initial release.
+      - C code by Andrew Gierth.
+      - Packaged for PGXN and maintained by David E. Wheeler.
+
