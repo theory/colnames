@@ -1,16 +1,7 @@
 
-MODULE_big = colnames
-DATA_built = colnames.sql
-OBJS = colnames.o
+DATA         = $(filter-out $(wildcard sql/*--*.sql),$(wildcard sql/*.sql))
+MODULES      = $(patsubst %.c,%,$(wildcard src/*.c))
+PG_CONFIG    = pg_config
 
-ifndef NO_PGXS
-PG_CONFIG = pg_config
-PGXS = $(shell $(PG_CONFIG) --pgxs)
+PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
-else
-subdir = contrib/colnames
-top_builddir = ../..
-include $(top_builddir)/src/Makefile.global
-include $(top_srcdir)/contrib/contrib-global.mk
-endif
-

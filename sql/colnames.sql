@@ -11,6 +11,6 @@ SET search_path = public;
 -- order of fields that would be returned by, say, select (rec).*
 
 CREATE FUNCTION colnames(record) RETURNS name[] LANGUAGE 'C' STABLE
-AS 'MODULE_PATHNAME','record_colnames';
+AS '$libdir/colnames','record_colnames';
 
 -- end 
