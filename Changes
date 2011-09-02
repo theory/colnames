@@ -1,7 +1,8 @@
 Revision history for PostgreSQL extension colnames.
 
-1.0.0  
+1.0.0  2011-09-02T17:29:02Z
       - Initial release.
+      - Supports PostgreSQL 8.2 and up.
       - C code by Andrew Gierth.
       - Packaged for PGXN and maintained by David E. Wheeler.
 
