@@ -9,8 +9,8 @@ might need to get the column names in order to generate a query string.
 To build colnames, just do this:
 
     make
-    make installcheck
     make install
+    make installcheck
 
 If you encounter an error such as:
 
@@ -20,8 +20,8 @@ You need to use GNU make, which may well be installed on your system as
 `gmake`:
 
     gmake
-    gmake install
     gmake installcheck
+    gmake install
 
 If you encounter an error such as:
 
@@ -32,7 +32,9 @@ package management system such as RPM to install PostgreSQL, be sure that the
 `-devel` package is also installed. If necessary tell the build process where
 to find it:
 
-    env PG_CONFIG=/path/to/pg_config make && make installcheck && make install
+    make PG_CONFIG=/path/to/pg_config
+    make install PG_CONFIG=/path/to/pg_config
+    make installcheck PG_CONFIG=/path/to/pg_config
 
 If you encounter an error such as:
 
@@ -66,7 +68,8 @@ environment variable to specify the schema, like so:
 
 Dependencies
 ------------
-The `colnames` data type has no dependencies other than PostgreSQL and PL/pgSQL.
+The `colnames` data type has no dependencies other than PostgreSQL 8.2.0
+or higher.
 
 Copyright and License
 ---------------------
