@@ -4,8 +4,8 @@ BEGIN;
 \i sql/colnames.sql
 
 SELECT colnames( ROW(1, 3, 'foo') );
-SELECT colnames( ROW(c.*)::pg_collation ) FROM pg_collation c LIMIT 1;
-SELECT colnames( NULL::pg_collation );
+SELECT colnames( ROW(c.*)::pg_cast ) FROM pg_cast c LIMIT 1;
+SELECT colnames( NULL::pg_cast );
 
 CREATE TYPE foo AS (id int, name text);
 SELECT colnames( row(1, 'foo')::foo );

@@ -4,14 +4,14 @@
  {f1,f2,f3}
 (1 row)
 
-                               colnames                                
------------------------------------------------------------------------
- {collname,collnamespace,collowner,collencoding,collcollate,collctype}
+                        colnames                         
+---------------------------------------------------------
+ {castsource,casttarget,castfunc,castcontext,castmethod}
 (1 row)
 
-                               colnames                                
------------------------------------------------------------------------
- {collname,collnamespace,collowner,collencoding,collcollate,collctype}
+                        colnames                         
+---------------------------------------------------------
+ {castsource,casttarget,castfunc,castcontext,castmethod}
 (1 row)
 
  colnames  
