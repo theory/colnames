@@ -1,6 +1,8 @@
 Revision history for PostgreSQL extension colnames.
 
 1.1.0
+      - Fixed reference leak when `colnames()` is called on a RECORD with no
+        columns.
 
 1.0.0  2011-09-02T17:29:02Z
       - Initial release.

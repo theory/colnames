@@ -12,7 +12,7 @@
          "abstract": "Lists the column names in a PostgreSQL RECORD value",
          "file": "sql/colnames.sql",
          "docfile": "doc/colnames.mmd",
-         "version": "1.0.0"
+         "version": "1.1.0"
       }
    },
    "prereqs": {

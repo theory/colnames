@@ -13,4 +13,7 @@ SELECT colnames( row(1, 'foo')::foo );
 CREATE TYPE bar AS ("The Id" int, "My Name" text);
 SELECT colnames( row(1, 'bar')::bar );
 
+CREATE TYPE empty AS ();
+SELECT colnames( row()::empty );
+
 ROLLBACK;
