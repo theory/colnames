@@ -59,6 +59,7 @@ record_colnames(PG_FUNCTION_ARGS)
 	if (ncolumns == 0)
 	{
 		a = construct_empty_array(NAMEOID);
+        ReleaseTupleDesc(tupdesc);
 		PG_RETURN_POINTER(a);
 	}
 
