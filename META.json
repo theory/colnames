@@ -1,7 +1,7 @@
 {
    "name": "colnames",
    "abstract": "Lists the column names in a PostgreSQL RECORD value",
-   "version": "1.3.0",
+   "version": "1.4.0",
    "maintainer": [
       "Andrew Gierth <andrew@tao11.riddles.org.uk>",
       "David E. Wheeler <david@justatheory.com>"
