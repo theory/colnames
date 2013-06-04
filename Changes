@@ -1,6 +1,8 @@
 Revision history for PostgreSQL extension colnames.
 
 1.4.0
+      - Fixed the Makefile to allow `PG_CONFIG=/path/to/pg_config` to actually
+        work.
 
 1.3.0  2013-05-28T23:16:22Z
       - Fix compile failure on PostgreSQL 9.3.
