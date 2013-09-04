@@ -1,0 +1,30 @@
+\set ECHO 0
+  colnames  
+------------
+ {f1,f2,f3}
+(1 row)
+
+                colnames                
+----------------------------------------
+ {objoid,classoid,objsubid,description}
+(1 row)
+
+                colnames                
+----------------------------------------
+ {objoid,classoid,objsubid,description}
+(1 row)
+
+ colnames  
+-----------
+ {id,name}
+(1 row)
+
+       colnames       
+----------------------
+ {"The Id","My Name"}
+(1 row)
+
+ERROR:  syntax error at or near ")"
+LINE 1: CREATE TYPE empty AS ();
+                              ^
+ERROR:  current transaction is aborted, commands ignored until end of transaction block

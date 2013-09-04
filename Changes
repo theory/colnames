@@ -5,6 +5,7 @@ Revision history for PostgreSQL extension colnames.
       - Fixed the Makefile to confirm to pgsql-hackers recommendations.
       - Changed the Makefile to read the distribution name and version from
         META.json.
+      - Fixed test failures on PostgreSQL 9.0 and lower.
 
 1.3.0  2013-05-28T23:16:22Z
       - Fix compile failure on PostgreSQL 9.3.
