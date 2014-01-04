@@ -1,6 +1,7 @@
 Revision history for PostgreSQL extension colnames.
 
 1.5.0
+      - Fixed an installation issue on PostgreSQL 9.3.2.x
 
 1.4.0  2013-09-06T00:38:22Z
       - Fixed the Makefile to recognize the `PG_CONFIG` environment variable.
