@@ -1,4 +1,4 @@
-colnames 1.1.0
+colnames 1.6.0
 ==============
 
 This extension contains a single SQL function, `colnames()`, that takes a
