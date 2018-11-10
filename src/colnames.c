@@ -13,9 +13,13 @@
 #include "utils/typcache.h"
 #include "utils/array.h"
 
+/* compatibility with PostgreSQL v11+ */
+#if PG_VERSION_NUM < 110000
+/* new in v11 */
+#define TupleDescAttr(tupdesc, i) ((tupdesc)->attrs[(i)])
+#endif
 
 PG_MODULE_MAGIC;
-
 
 PG_FUNCTION_INFO_V1(record_colnames);
 Datum record_colnames(PG_FUNCTION_ARGS);
@@ -71,10 +75,10 @@ record_colnames(PG_FUNCTION_ARGS)
 	for (i = 0, j = 0; i < ncolumns; ++i)
 	{
 		/* Ignore dropped columns in datatype */
-		if (tupdesc->attrs[i]->attisdropped)
+		if (TupleDescAttr(tupdesc, i)->attisdropped)
 			continue;
 
-		d[j++] = NameGetDatum(&(tupdesc->attrs[i]->attname));
+		d[j++] = NameGetDatum(&(TupleDescAttr(tupdesc, i)->attname));
 	}
 
 	a = construct_array(d, j,
