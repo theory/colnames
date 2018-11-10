@@ -6,6 +6,7 @@ record value as its argument and returns an array of the names of the columns
 in that record. This can be useful for example in trigger functions, where one
 might need to get the column names in order to generate a query string.
 
+[![PGXN version](https://badge.fury.io/pg/colnames.svg)](https://badge.fury.io/pg/colnames)
 [![Build Status](https://travis-ci.org/theory/colnames.png)](https://travis-ci.org/theory/sqitch)
 
 To build colnames, just do this:
