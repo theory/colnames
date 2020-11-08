@@ -7,3 +7,4 @@ regression.out
 /sql/colnames--*
 !/sql/colnames--*--*.sql
 /colnames-*
+/latest-changes.md
