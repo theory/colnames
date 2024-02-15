@@ -1,6 +1,6 @@
 Revision history for PostgreSQL extension colnames.
 
-1.7.0
+1.7.0  2024-02-15T21:49:23Z
       - Added LICENSE file.
       - Improved documentation code formatting.
       - Added pure SQL example to the docs for those who can't install the
