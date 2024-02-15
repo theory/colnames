@@ -4,7 +4,7 @@ Revision history for PostgreSQL extension colnames.
       - Added LICENSE file.
       - Improved documentation code formatting.
       - Added pure SQL example to the docs for those who can't install the
-        extension. Thanks to Jim Nasby for the suggestion (#)!
+        extension. Thanks to Jim Nasby for the suggestion (#2)!
 
 1.6.0  2018-11-10T20:03:01Z
       - Fixed build and test issues on Postgres 11.
