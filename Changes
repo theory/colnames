@@ -2,7 +2,7 @@ Revision history for PostgreSQL extension colnames.
 
 1.7.1
       - Removed the `$libdir/` prefix from the `module_pathname` directive,
-        so that the module can be installed and fond in any directory listed
+        so that the module can be installed and found in any directory listed
         in `dynamic_library_path`.
 
 1.7.0  2024-02-15T21:49:23Z
