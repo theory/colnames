@@ -73,7 +73,7 @@ Authors
 Copyright and License
 ---------------------
 
-Copyright (c) 2011-2024 Andrew Gierth and David E. Wheeler.
+Copyright (c) 2011-2025 Andrew Gierth and David E. Wheeler.
 
 This module is free software; you can redistribute it and/or modify it under
 the [PostgreSQL License](http://www.opensource.org/licenses/postgresql).
