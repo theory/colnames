@@ -86,6 +86,19 @@ You need to run the test suite using a super user, such as the default
 make installcheck PGUSER=postgres
 ```
 
+To install the extension in a custom prefix on PostgreSQL 18 or later, pass
+the `prefix` argument to `install` (but no other `make` targets):
+
+    make install prefix=/usr/local/extras
+
+Then ensure that the prefix is included in the following [`postgresql.conf`
+parameters]:
+
+```ini
+extension_control_path = '/usr/local/extras/postgresql/share:$system'
+dynamic_library_path   = '/usr/local/extras/postgresql/lib:$libdir'
+```
+
 Once colnames is installed, you can add it to a database. If you're running
 PostgreSQL 9.1.0 or greater, it's a simple as connecting to a database as a
 super user and running:
@@ -145,3 +158,5 @@ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
 FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN “AS
 IS” BASIS, AND ANDREW GIERTH AND DAVID E. WHEELER HAS NO OBLIGATIONS TO
 PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+  [`postgresql.conf` parameters]: https://www.postgresql.org/docs/devel/runtime-config-client.html#RUNTIME-CONFIG-CLIENT-OTHER
