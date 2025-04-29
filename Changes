@@ -1,9 +1,11 @@
 Revision history for PostgreSQL extension colnames.
 
-1.7.1
+1.7.1  2025-04-29T18:11:00Z
       - Removed the `$libdir/` prefix from the `module_pathname` directive,
         so that the module can be installed and found in any directory listed
         in `dynamic_library_path`.
+      - Supports PostgreSQL 8.2–17.
+      - The extension version remains 1.7.0.
 
 1.7.0  2024-02-15T21:49:23Z
       - Added LICENSE file.
