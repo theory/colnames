@@ -15,5 +15,5 @@ jobs:
     container: pgxn/pgxn-tools
     steps:
       - run: pg-start ${{ matrix.pg }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: pg-build-test
